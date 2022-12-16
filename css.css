@@ -76,6 +76,7 @@ html {
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
 }
+            
 /*Pro responzibilita pro PC monitory*/
 @media only screen and (min-width: 768px) {
     .col-1 {width: 8.33%;}
@@ -92,6 +93,12 @@ html {
     .col-12 {width: 100%;}
     
 }
+@media print {
+    .right{
+        height: fit-content;
+    }
+}
+
 /*Stylizace galerie*/
 .img{
     margin: 5px;
@@ -140,18 +147,19 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content > ol > a li {
     color: black;
     padding: 3px !important;
     text-decoration: none;
     display: block;
-    text-align: center;s
+    text-align: center;
 
 }
 
 .dropdown:hover .dropdown-content { 
     display: block; 
 }
+
 /*Stylizace textu*/
 .text {
     text-align: center;
