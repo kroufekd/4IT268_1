@@ -97,6 +97,9 @@ html {
     .right{
         height: fit-content;
     }
+    .header{
+        padding:0
+    }
 }
 
 /*Stylizace galerie*/
